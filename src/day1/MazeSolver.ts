@@ -76,7 +76,6 @@ function walk(
             x: curr.x + x,
             y: curr.y + y,
         };
-
         if (walk(maze, wall, newCurr, end, seen, path)) {
             return true;
         }
