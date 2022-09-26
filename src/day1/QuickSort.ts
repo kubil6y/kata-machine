@@ -16,6 +16,7 @@ function qs(arr: number[], low: number, high: number): void {
 function partition(arr: number[], low: number, high: number): number {
     // this could cause o(n2) issue
     const pivot = arr[high];
+    // swap marker
     let idx = low - 1; // start from left of it
     // walk from the low to high (not inluding)
     for (let i = low; i < high; i++) {
