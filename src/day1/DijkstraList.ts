@@ -1,3 +1,5 @@
+// NOTE: Time Complexity of Dijkstra's Algorithm is O ( V 2 ) but with
+// min-priority queue it drops down to O ( V + E l o g V ) .
 function hasUnvisited(seen: boolean[], dists: number[]): boolean {
     return seen.some((s, i) => !s && dists[i] < Infinity);
 }
